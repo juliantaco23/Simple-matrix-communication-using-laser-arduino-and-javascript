@@ -1,0 +1,68 @@
+*{
+    width: 100%;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    line-height: 1.7em;
+    font-size: 16px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    margin: 30px 5%;
+    padding: 30px 5%;
+    background-color: antiquewhite;
+    border: black solid 1px;
+    text-align: center;
+}
+
+h1{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+
+span{
+    height: 50px;
+}
+.content{
+    max-width: 1000px;
+    max-height: 1000px;
+    padding-bottom: 500px;
+}
+
+.drawMatrix{
+    display: grid;
+    place-items: center;
+    grid-gap:5px;
+    grid-column-gap: 5px;
+    margin-top: 20px;
+}
+
+.decodeMatrix{
+    display: grid;
+    place-items: center;
+    grid-gap:5px;
+    grid-column-gap: 5px;
+    margin-top: 20px;
+}
+
+.card{
+    border: 1px solid blue;
+    background-color: red;
+    float: left;
+    /* width: 50px;
+    margin: 0px;
+    padding: 0px;
+    height: 50px; */
+}
+
+
+.hidden-card{
+    background-color: gray;
+    display: grid;
+    place-items: center;
+}

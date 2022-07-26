@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Simple communication system - draw Matrix</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="content">
+        <h1>Enter your message</h1>
+        <span style='line-height:1em; color:blue;'>
+                type how many rows does the matrix has</span>
+        <input type="number" id="matrixRows" name="matrixRows" required="true">
+        <br>
+        <span style='line-height:1em; color:blue;'>
+                type how many columns does the matrix has</span>
+        <br>
+        <input type="number" id="matrixColumns" name="matrixColumns" required="true">
+        <div class="submitSizeButton"><button style="margin-top: 20px;">Add Information</button></div>
+        <section id="drawMatrix" class="drawMatrix">
+                <input type="hidden" id="positions">
+        </section>
+        <div id="showInfo"></div>
+    </div>
+
+    <script type="module" src="./drawMatrix.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Simple communication system</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <h1>Enter your message</h1>
+
+        <form role="form" id="post-form">
+            
+            <div class="inputHexa">
+                <p>Remember that a hexadecimal char may be a number between 0 and 9 or an A,B,C,D,E,F</p>
+                <br>
+                <label for="name"> Type the hexadecimal sequence</label>
+                <input type="text" id="hexaCode" name="hexaCode" required="true">
+                <br>
+            </div>
+            
+            <div class="inputMatrix">
+                <label for="name">How do you want to type the matrix</label>
+                <select name="inputType" class="form-control" id="inputType" placeholder="Choose one" required>
+                    <option>Type the sequence</option>
+                    <option>Draw the matrix</option>
+                </select>
+                <div id="typeSequence"></div>
+                <div id="drawMatrix">
+                </div>
+            </div>
+            
+            <div class="submitButton"><button type="submit" id="btn-post-form" style="margin-top: 20px;">Add Information</button></div>
+        </form>
+    </div>
+
+    <script src="./functions.js"></script>
+
+</body>
+
+</html>
